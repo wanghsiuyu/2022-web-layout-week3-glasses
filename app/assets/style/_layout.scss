@@ -1,0 +1,70 @@
+// header
+.header {
+    background-color: $color-1;
+}
+.logo {
+    width: 80px;
+    height: 80px;
+    background-image: url(../images/logo-white.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include text-hide;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 44px;
+    text-align: center;
+    @include mobile(){
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        position: absolute;
+        top:80px;
+        left: 0;
+        right: 0;
+        transition: .5s ease;
+    }
+}
+.menu-item {
+    @include mobile(){
+        width: 100%;
+        line-height: 1;
+        border-top:  1px solid #cccccc;
+        background-color: $color-1;
+    }
+}
+.menu-item a{
+    font-size: 20px;
+    color: white;
+    padding: 25px 10px;//左右寫太大，會在手機跑版
+    // &:last-child {
+    //     padding-right: 0;
+    // }
+    &:hover {
+        color: black;
+        font-weight: bold;
+    }
+}
+.menu-btn {
+    display: none;
+    @include mobile(){
+        display: block;
+    }
+}
+.menu-btn-style {
+    line-height: 1;
+    font-size: 40px;
+    color: white;
+  
+}
+.show-menu {
+    max-height: 300px;
+    transition: .5s ease;
+}

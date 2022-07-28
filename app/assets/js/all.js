@@ -1,5 +1,6 @@
-console.log('Hello!');
-
 $(document).ready(() => {
-  console.log('HesSchool Hello!');
+  $(".menu-btn").click(function(e) {
+    e.preventDefault();
+    $(".menu-list").toggleClass("show-menu");
+  });
 });
