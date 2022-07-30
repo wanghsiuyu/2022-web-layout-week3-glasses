@@ -1,0 +1,316 @@
+// banner start
+.banner {
+  background-image: url(../images/home-header.png);
+  height: calc(100vh - 80px); //設計稿為787px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include pad() {
+    background-image: url(../images/home-header-sm.png);
+    height: 787px;
+  }
+  @include mobile() {
+    height: 396px;
+  }
+}
+.banner-plan {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  text-align: right;
+  color: $color-2;
+}
+.banner-title {
+  font-size: 36px;
+  font-family: 'Noto Sans TC';
+  @include mobile() {
+    font-size: 16px;
+  }
+}
+.banner-subtitle {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  @include mobile() {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+}
+.banner-btn {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  padding: 6px 12px;
+  background-color: $color-1;
+}
+// banner end
+
+// feature start
+.feature {
+  padding: 80px 0;
+  background-color: $color-3;
+  text-align: center;
+  @include mobile() {
+    padding: 40px 0;
+  }
+}
+.feature-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: $color-2;
+  margin-bottom: 24px;
+  @include mobile() {
+    font-size: 24px;
+  }
+}
+.index-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.feature-card-item {
+  width: calc((100% - 72px) / 4); //306
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include pad() {
+    width: calc((100% - 24px) / 2); //336
+  }
+  @include mobile() {
+    width: 100%;
+  }
+  img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom: 16px;
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: $color-2;
+    margin-bottom: 8px;
+  }
+  p {
+    text-align: justify;
+  }
+}
+// feature end
+
+// classic start
+.classic {
+  padding: 80px 0;
+  text-align: center;
+  @include mobile() {
+    padding: 40px 0;
+  }
+}
+.index-title {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  color: $color-2;
+  margin-bottom: 48px;
+  @include mobile() {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+.classic-card-item {
+  width: calc((100% - 48px) / 3); //416
+  @include pad() {
+    width: calc((336 / 696) * 100%);
+  }
+  @include mobile() {
+    width: 100%;
+  }
+  img {
+    margin-bottom: 8px;
+  }
+  h3 {
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 900;
+    color: $color-1;
+  }
+}
+// classic end
+
+// design start
+.design {
+  background-image: url(../images/index-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+  text-align: center;
+  @include pad() {
+    background-image: url(../images/index-bg-sm.png);
+  }
+  @include mobile() {
+    padding: 40px 0;
+  }
+}
+.text-white {
+  color: white;
+}
+.design-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  @include pad() {
+    gap: 24px;
+  }
+}
+.design-card-item {
+  width: 50%;
+  @include pad() {
+    width: 100%;
+  }
+  .design-double-a {
+    background-image: url(../images/home-section4-1.png);
+    height: 240px;
+    background-size: cover;
+    background-position: center;
+    @include mobile() {
+      background-image: url(../images/home-section4-1-sm.png);
+    }
+  }
+  .design-youth {
+    background-image: url(../images/home-section4-2.png);
+    height: 240px;
+    background-size: cover;
+    background-position: center;
+    @include mobile() {
+      background-image: url(../images/home-section4-2-sm.png);
+    }
+  }
+  h3 {
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 900;
+    color: $color-1;
+    background-color: white;
+  }
+}
+// design end
+
+// comment start
+.comment {
+  padding: 80px 0;
+  @include mobile() {
+    padding: 40px 0;
+  }
+}
+.comment-card-item {
+  width: calc((100% - 72px) / 4); //306
+  box-shadow: 0px 2px 6px #00000029;
+  border-radius: 4px;
+  @include pad() {
+    width: calc((100% - 24px) / 2); //336
+  }
+  @include mobile() {
+    width: 100%;
+  }
+}
+.comment-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  height: calc(511px - 306px);
+}
+.customer-name {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.comment-date {
+  font-size: 14px;
+  color: #707070;
+}
+// comment end
+
+// contact start
+.contact-container {
+  max-width: 660px; //636+24
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+  @include pad() {
+    max-width: 576px;
+  }
+}
+.contact {
+  padding: 80px 0;
+  background-color: $color-3;
+  @include mobile() {
+    padding: 40px 0;
+  }
+  p {
+    font-size: 20px;
+    margin-bottom: 24px;
+    @include mobile() {
+      font-size: 16px;
+    }
+  }
+}
+.contact-form {
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  input {
+    display: block;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    width: 100%;
+    padding: 6px 12px;
+    color: rgba(0, 0, 0, 0.2);
+  }
+  textarea {
+    font-size: 16px;
+    width: 100%;
+    height: 136px;
+    padding: 6px 12px;
+    margin-bottom: 16px;
+  }
+}
+.contact-check {
+  margin-bottom: 48px;
+  display: flex;
+  @include mobile() {
+    margin-bottom: 24px;
+  }
+  input[type='checkbox'] {
+    width: 24px;
+    height: 24px;
+    margin: 0 4px 0 0;
+  }
+  label {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+.contact-send-btn {
+  text-align: center;
+  button {
+    padding: 16px 176px;
+    background-color: $color-1;
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    @include pad() {
+      padding: 16px 136px;
+    }
+    @include mobile() {
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+    }
+  }
+}

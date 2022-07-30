@@ -1,70 +1,184 @@
-// header
-.header {
-    background-color: $color-1;
+// header start
+.bg-primary {
+  background-color: $color-1;
 }
 .logo {
-    width: 80px;
-    height: 80px;
-    background-image: url(../images/logo-white.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    @include text-hide;
+  width: 80px;
+  height: 80px;
+  background-image: url(../images/logo-white.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include text-hide;
 }
+
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.menu-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 44px;
-    text-align: center;
-    @include mobile(){
-        gap: 0;
-        max-height: 0;
-        overflow: hidden;
-        position: absolute;
-        top:80px;
-        left: 0;
-        right: 0;
-        transition: .5s ease;
-    }
+.header-menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  @include mobile() {
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    transition: 0.5s ease;
+  }
 }
-.menu-item {
-    @include mobile(){
-        width: 100%;
-        line-height: 1;
-        border-top:  1px solid #cccccc;
-        background-color: $color-1;
-    }
+.header-menu-item {
+  @include mobile() {
+    width: 50%;
+    border: 1px solid #cccccc;
+    background-color: $color-1;
+  }
 }
-.menu-item a{
+.header-menu-item {
+  a {
     font-size: 20px;
     color: white;
-    padding: 25px 10px;//左右寫太大，會在手機跑版
-    // &:last-child {
-    //     padding-right: 0;
-    // }
-    &:hover {
-        color: black;
-        font-weight: bold;
+    padding: 25px 32px;
+    @include mobile() {
+      font-size: 16px;
+      padding-top: 12px;
+      padding-bottom: 12px;
     }
+  }
+  &:last-child a {
+    padding-right: 0;
+    @include mobile() {
+      padding-right: 32px;
+    }
+  }
 }
-.menu-btn {
-    display: none;
-    @include mobile(){
-        display: block;
-    }
+.header-menu-btn {
+  display: none;
+  @include mobile() {
+    display: block;
+  }
 }
 .menu-btn-style {
-    line-height: 1;
-    font-size: 40px;
-    color: white;
-  
+  line-height: 1;
+  font-size: 40px;
+  color: white;
 }
 .show-menu {
-    max-height: 300px;
-    transition: .5s ease;
+  max-height: 210px;
+  transition: 1s ease;
 }
+// header end
+
+// footer start
+.footer {
+  padding-top: 48px;
+  color: white;
+  @include mobile() {
+    padding-top: 24px;
+  }
+}
+.footer-info,
+.footer-copyright-all {
+  display: flex;
+  justify-content: space-between;
+  //border: 1px solid black;
+}
+.footer-info {
+  margin-bottom: 32px;
+  @include mobile() {
+    margin-bottom: 24px;
+  }
+}
+.footer-menu-list {
+  display: flex;
+  @include mobile() {
+    display: none;
+  }
+}
+.footer-menu-item {
+  a {
+    padding: 12px 24px;
+    color: white;
+  }
+  &:first-child a {
+    padding-left: 0;
+  }
+}
+.footer-contact-item a {
+  display: flex;
+  gap: 16px;
+  font-family: 'Noto Sans TC';
+  font-size: 36px;
+  color: white;
+  @include mobile() {
+    gap: 8px;
+    font-size: 16px;
+  }
+  span {
+    font-size: 48px;
+    color: white;
+    @include mobile() {
+      font-size: 24px;
+    }
+  }
+}
+.footer-social-list {
+  display: flex;
+  gap: 32px;
+  @include pad() {
+    gap: 16px;
+  }
+  @include mobile() {
+    gap: 8px;
+  }
+}
+.footer-social-item {
+  width: 48px;
+  height: 48px;
+  @include pad() {
+    width: 40px;
+    height: 40px;
+  }
+  @include mobile() {
+    width: 24px;
+    height: 24px;
+  }
+}
+.footer-copyright-all {
+  align-items: center;
+  padding: 32px 0;
+  border-top: 1px solid white;
+  @include pad() {
+    padding-bottom: 40px;
+  }
+  @include mobile() {
+    padding: 16px 0 24px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  p {
+    @include mobile() {
+      margin-bottom: 8px;
+    }
+  }
+}
+.footer-policy-list {
+  display: flex;
+  gap: 48px;
+  @include mobile() {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+.footer-policy-item a {
+  color: white;
+  font-size: 14px;
+  @include mobile() {
+    font-size: 16px;
+  }
+}
+// footer end

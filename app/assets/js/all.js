@@ -1,6 +1,7 @@
+// header menu button in mobile
 $(document).ready(() => {
-  $(".menu-btn").click(function(e) {
+  $('.header-menu-btn').click(function (e) {
     e.preventDefault();
-    $(".menu-list").toggleClass("show-menu");
+    $('.header-menu-list').toggleClass('show-menu');
   });
 });
