@@ -1,0 +1,163 @@
+// product-tab start
+.tab-active {
+  border-bottom: 8px solid $color-1;
+}
+.product-tab-list {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+}
+.product-tab-item {
+  width: calc(100% / 3);
+  border-left: 1px solid #dcdcdc;
+  &:last-child {
+    border-right: 1px solid #dcdcdc;
+  }
+  a {
+    width: 100%;
+    font-size: 32px;
+    font-weight: 500;
+    color: black;
+    padding: 24px 0 16px;
+    &:hover {
+      border-bottom: 8px solid $color-1;
+    }
+    @include pad() {
+      font-size: 24px;
+      padding: 16px 0 8px;
+    }
+    @include mobile() {
+      font-size: 16px;
+    }
+  }
+}
+// product-tab end
+
+// optical-banner start
+.optical-banner {
+  display: flex;
+  li {
+    height: 296px;
+    width: 50%;
+    @include mobile() {
+      height: 136px;
+    }
+  }
+}
+.optical-banner-glasses {
+  background-image: url(../images/product-header-1.png);
+  @include pad() {
+    background-image: url(../images/product-header-sm-1.png);
+  }
+}
+.optical-banner-model {
+  background-image: url(../images/product-header-2.png);
+  @include pad() {
+    background-image: url(../images/product-header-sm-2.png);
+  }
+}
+// optical-banner end
+
+// optical-product-list start
+.optical {
+  padding: 80px 0;
+  @include mobile() {
+    padding: 40px 0 64px;
+  }
+}
+.product-title {
+  font-size: 42px;
+  font-weight: 500;
+  text-align: center;
+  @include mobile() {
+    font-size: 24px;
+  }
+}
+.product-subtitle {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 32px;
+  @include mobile() {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+.optical-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px 24px;
+  margin-bottom: 80px;
+  @include pad() {
+    gap: 40px 24px;
+  }
+  @include mobile() {
+    gap: 24px;
+    margin-bottom: 64px;
+  }
+}
+.optical-card-item {
+  width: calc((100% - 72px) / 4);
+  @include pad() {
+    width: calc((100% - 24px) / 2);
+  }
+  @include mobile() {
+    width: 100%;
+  }
+  p {
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    span {
+      color: $color-1;
+      font-weight: 500;
+    }
+  }
+}
+.color-choice {
+  display: flex;
+}
+.color-block {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+.purple {
+  background-color: #5f3e2d;
+  margin-right: 8px;
+}
+.orange {
+  background-color: #b75929;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  li {
+    border: 1px solid #555555;
+    &:not(:last-child) {
+      margin-right: -1px;
+    }
+  }
+}
+.page-link {
+  color: #555555;
+  font-size: 18px;
+  padding: 10px 14px;
+  &:hover {
+    background-color: #f2f2f2;
+    opacity: 1;
+  }
+  @include mobile() {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+}
+.page-active {
+  color: #ffffff;
+  background-color: #000000;
+  &:hover {
+    color: #ffffff;
+    background-color: #000000;
+  }
+}
+// optical-product-list end

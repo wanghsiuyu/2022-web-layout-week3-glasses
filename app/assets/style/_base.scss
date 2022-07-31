@@ -3,7 +3,6 @@ a {
   display: block;
   &:hover {
     opacity: 0.8;
-    transition: 0.3s ease;
   }
 }
 img {
@@ -29,12 +28,12 @@ body {
   padding-left: 12px;
   padding-right: 12px;
   @include pad() {
-    max-width: 768px; //768-36*2+72=768
+    //max-width: 768px; //768-36*2+72=768
     padding-left: 36px;
     padding-right: 36px;
   }
   @include mobile() {
-    max-width: 375px; //375-12*2+24=375
+    //max-width: 375px; //375-12*2+24=375
     padding-left: 12px;
     padding-right: 12px;
   }
@@ -51,18 +50,8 @@ body {
 .mb-12 {
   margin-bottom: 48px;
 }
-// .d-flex {
-//   display: flex;
-// }
-// .justify-space-between {
-//   justify-content: space-between;
-// }
-// .align-items-center {
-//   align-items: center;
-// }
-// .gap-1 {
-//   gap: 24px;
-// }
-// .flex-wrap {
-//   flex-wrap: wrap;
-// }
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
