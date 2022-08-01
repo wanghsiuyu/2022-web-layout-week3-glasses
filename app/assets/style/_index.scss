@@ -195,13 +195,14 @@
 }
 .comment-card-item {
   width: calc((100% - 72px) / 4); //306
+  box-shadow: 0px 2px 6px #00000029;
+  border-radius: 4px;
   img {
     height: 306px;
     width: 100%;
     object-fit: cover;
+    border-radius: 4px 4px 0 0;
   }
-  box-shadow: 0px 2px 6px #00000029;
-  border-radius: 4px;
   @include pad() {
     width: calc((100% - 24px) / 2); //336
   }
