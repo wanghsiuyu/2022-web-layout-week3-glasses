@@ -32,13 +32,6 @@
   }
 }
 .header-menu-item {
-  @include mobile() {
-    width: 50%;
-    border: 1px solid #cccccc;
-    background-color: $color-1;
-  }
-}
-.header-menu-item {
   a {
     font-size: 20px;
     color: white;
@@ -54,6 +47,11 @@
     @include mobile() {
       padding-right: 32px;
     }
+  }
+  @include mobile() {
+    width: 100%;
+    border-top: 1px solid #cccccc;
+    background-color: $color-1;
   }
 }
 .header-menu-btn {

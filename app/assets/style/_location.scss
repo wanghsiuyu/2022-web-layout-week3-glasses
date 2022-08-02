@@ -1,0 +1,94 @@
+// location start
+.location {
+  padding: 96px 0 80px;
+  @include pad() {
+    padding-top: 80px;
+  }
+  @include mobile() {
+    padding: 40px 0 64px;
+  }
+}
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  padding-left: 12px;
+  border-left: 8px solid #9f1213;
+  margin-bottom: 32px;
+  @include mobile() {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+.location-select {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  @include mobile() {
+    margin-bottom: 24px;
+  }
+  label {
+    font-size: 24px;
+    margin-right: 16px;
+    @include mobile() {
+      font-size: 16px;
+      margin-right: 8px;
+    }
+  }
+  select {
+    font-size: 18px;
+    line-height: 26px;
+    color: #495057;
+    width: 304px;
+    border: 1px solid #ced4da;
+    padding: 6px 12px;
+    @include mobile() {
+      width: calc(100% - 72px);
+    }
+  }
+}
+.location-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  @include pad() {
+    gap: 24px;
+  }
+}
+.location-card-item {
+  width: calc((100% - 48px) / 3);
+  @include pad() {
+    width: calc((100% - 24px) / 2);
+  }
+  @include mobile() {
+    width: 100%;
+  }
+}
+.location-card-title {
+  font-size: 24px;
+  padding: 8px 24px;
+  border: 1px solid #00000020;
+}
+.location-card-info {
+  font-size: 20px;
+  padding: 16px 24px;
+  border: 1px solid #00000020;
+  border-top: 0px;
+  p {
+    display: flex;
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+    span {
+      margin-right: 8px;
+    }
+  }
+}
+.location-card-btn {
+  font-size: 19px;
+  line-height: 27px;
+  color: white;
+  background-color: black;
+  padding: 16px 0;
+  text-align: center;
+}
+// location end
