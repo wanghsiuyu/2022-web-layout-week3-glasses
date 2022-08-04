@@ -1,0 +1,21 @@
+// faq start
+.faq-container {
+  padding-right: 440px;
+  @include pad() {
+    padding-right: 0;
+  }
+}
+.faq-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.faq-question {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.faq-answer:not(:last-child) {
+  margin-bottom: 32px;
+}
+// faq end

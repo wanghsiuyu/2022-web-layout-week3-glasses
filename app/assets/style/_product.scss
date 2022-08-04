@@ -22,6 +22,7 @@
     padding: 24px 0 16px;
     &:hover {
       border-bottom: 8px solid $color-1;
+      opacity: 1;
     }
     @include pad() {
       font-size: 24px;
@@ -151,37 +152,3 @@
   background-color: #b75929;
 }
 // product-list end
-
-// pagination start
-.pagination {
-  display: flex;
-  justify-content: center;
-  li {
-    border: 1px solid #555555;
-    &:not(:last-child) {
-      margin-right: -1px;
-    }
-  }
-}
-.page-link {
-  color: #555555;
-  font-size: 18px;
-  padding: 10px 14px;
-  &:hover {
-    background-color: #f2f2f2;
-    opacity: 1;
-  }
-  @include mobile() {
-    font-size: 12px;
-    padding: 8px 10px;
-  }
-}
-.page-active {
-  color: #ffffff;
-  background-color: #000000;
-  &:hover {
-    color: #ffffff;
-    background-color: #000000;
-  }
-}
-// pagination end

@@ -1,0 +1,118 @@
+// blog navbar start
+.blog-navbar {
+  background-color: $color-2;
+  @include mobile() {
+    display: none;
+  }
+  &-link {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    padding: 13px 24px;
+  }
+  li:first-child {
+    a {
+      padding-left: 0;
+    }
+  }
+  &-search {
+    color: white;
+    line-height: 1;
+    padding: 13px 0 13px 13px;
+  }
+}
+// blog navbar end
+
+// blog article start
+.blog-article-card {
+  &-item {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 60px;
+    &:last-child {
+      margin-bottom: 124px;
+      @include pad() {
+        margin-bottom: 80px;
+      }
+      @include mobile() {
+        margin-bottom: 64px;
+      }
+    }
+    @include pad() {
+      margin-bottom: 24px;
+    }
+    @include mobile() {
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+  &-img-link {
+    width: calc((100% - 24px) / 2);
+    @include mobile() {
+      width: 100%;
+    }
+  }
+  &-content {
+    width: calc((100% - 24px) / 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include mobile() {
+      width: 100%;
+    }
+    h3 {
+      font-size: 32px;
+      color: $color-2;
+      @include pad() {
+        font-size: 24px;
+      }
+    }
+    h4 {
+      font-size: 20px;
+      font-weight: 500;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      @include pad() {
+        font-size: 16px;
+        margin-bottom: 4px;
+      }
+      span {
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.7);
+      }
+    }
+    p {
+      font-size: 20px;
+      color: #555555;
+      text-align: justify;
+      @include pad() {
+        font-size: 16px;
+      }
+      @include mobile() {
+        display: none;
+      }
+      a {
+        display: none;
+        @include pad() {
+          display: inline-block;
+          font-size: 16px;
+          font-weight: 400;
+          color: #555555;
+        }
+      }
+    }
+  }
+}
+.blog-more-link {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1;
+  color: $color-2;
+  text-align: right;
+  @include pad() {
+    display: none;
+  }
+}
+// blog article end
