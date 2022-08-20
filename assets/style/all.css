@@ -245,6 +245,17 @@ body {
       font-size: 12px;
       padding: 8px 10px; } }
 
+[data-aos] {
+  pointer-events: none; }
+
+.aos-animate {
+  pointer-events: auto; }
+
+.aos-init[data-aos][data-aos].aos-animate {
+  -webkit-transform: unset;
+      -ms-transform: unset;
+          transform: unset; }
+
 .bg-primary {
   background-color: #aa0601; }
 
