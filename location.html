@@ -10,13 +10,14 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,200"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
 
   <body>
     <!--header start-->
     <header class="bg-primary">
-      <nav class="nav container">
+      <nav class="nav container" data-aos="fade-left">
         <h1>
           <a href="./index.html" class="logo" title="眼鏡形象官網首頁">Glasses 眼鏡形象官網</a>
         </h1>
@@ -35,8 +36,8 @@
     
 <main class="layout-padding">
   <div class="container">
-    <h2 class="title">門市據點</h2>
-    <div class="location-select">
+    <h2 class="title" data-aos="fade-right">門市據點</h2>
+    <div class="location-select" data-aos="fade-right" data-aos-delay="300">
       <label for="location" class="location-select-title">選擇地區</label>
       <select name="location" id="location">
         <option value="台北市" selected>台北市</option>
@@ -47,7 +48,7 @@
 
     <section>
       <ul class="location-card-list">
-        <li class="location-card-item">
+        <li class="location-card-item" data-aos="fade-up" data-aos-delay="100">
           <img src="./assets/images/store-1.png" alt="台北中山旗艦店" />
           <h3 class="location-card-title">台北中山旗艦店</h3>
           <div class="location-card-info">
@@ -60,7 +61,7 @@
           </div>
           <a href="./location-taipei-zhongshan.html" class="location-card-btn">詳細資訊</a>
         </li>
-        <li class="location-card-item">
+        <li class="location-card-item" data-aos="fade-up" data-aos-delay="300">
           <img src="./assets/images/store-2.png" alt="台北綠園店" />
           <h3 class="location-card-title">台北綠園店</h3>
           <div class="location-card-info">
@@ -73,7 +74,7 @@
           </div>
           <a href="#" class="location-card-btn">詳細資訊</a>
         </li>
-        <li class="location-card-item">
+        <li class="location-card-item" data-aos="fade-up" data-aos-delay="500">
           <img src="./assets/images/store-3.png" alt="台中清水旗艦店" />
           <h3 class="location-card-title">台中清水旗艦店</h3>
           <div class="location-card-info">
@@ -86,7 +87,7 @@
           </div>
           <a href="#" class="location-card-btn">詳細資訊</a>
         </li>
-        <li class="location-card-item">
+        <li class="location-card-item" data-aos="fade-up" data-aos-delay="700">
           <img src="./assets/images/store-4.png" alt="高雄中正形象店" />
           <h3 class="location-card-title">高雄中正形象店</h3>
           <div class="location-card-info">
@@ -99,7 +100,7 @@
           </div>
           <a href="#" class="location-card-btn">詳細資訊</a>
         </li>
-        <li class="location-card-item">
+        <li class="location-card-item" data-aos="fade-up" data-aos-delay="900">
           <img src="./assets/images/store-5.png" alt="高雄夢時代店" />
           <h3 class="location-card-title">高雄夢時代店</h3>
           <div class="location-card-info">
@@ -166,6 +167,7 @@
       </div>
     </footer>
     <!--footer end-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/all.js"></script>

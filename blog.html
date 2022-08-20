@@ -10,13 +10,14 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,200"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
 
   <body>
     <!--header start-->
     <header class="bg-primary">
-      <nav class="nav container">
+      <nav class="nav container" data-aos="fade-left">
         <h1>
           <a href="./index.html" class="logo" title="眼鏡形象官網首頁">Glasses 眼鏡形象官網</a>
         </h1>
@@ -36,7 +37,7 @@
 <!-- blog navbar start-->
 <nav class="blog-navbar">
   <div class="container">
-    <div class="d-flex justify-space-between align-center">
+    <div class="d-flex justify-space-between align-center" data-aos="fade-left">
       <ul class="d-flex">
         <li><a class="blog-navbar-link" href="#">最新消息</a></li>
         <li><a class="blog-navbar-link" href="./blog-special.html">特別企劃</a></li>
@@ -54,9 +55,9 @@
 <main class="layout-padding">
   <!-- blog article start -->
   <div class="container">
-    <h2 class="title">部落格</h2>
+    <h2 class="title" data-aos="fade-right">部落格</h2>
     <ul class="blog-article-card-list">
-      <li class="blog-article-card-item">
+      <li class="blog-article-card-item" data-aos="fade-left">
         <a class="blog-article-card-img-link" href="./blog-special.html"
           ><img src="./assets/images/blog-1.png" alt="情人特別企劃" />
         </a>
@@ -73,7 +74,7 @@
           <a class="blog-more-link" href="./blog-special.html">MORE</a>
         </div>
       </li>
-      <li class="blog-article-card-item">
+      <li class="blog-article-card-item" data-aos="fade-right">
         <a class="blog-article-card-img-link" href="#"
           ><img src="./assets/images/blog-2.png" alt="街頭潮人訪問" />
         </a>
@@ -91,7 +92,7 @@
           <a class="blog-more-link" href="#">MORE</a>
         </div>
       </li>
-      <li class="blog-article-card-item">
+      <li class="blog-article-card-item" data-aos="fade-left">
         <a class="blog-article-card-img-link" href="#"
           ><img src="./assets/images/blog-3.png" alt="春季新品上市" />
         </a>
@@ -108,7 +109,7 @@
           <a class="blog-more-link" href="#">MORE</a>
         </div>
       </li>
-      <li class="blog-article-card-item">
+      <li class="blog-article-card-item" data-aos="fade-right">
         <a class="blog-article-card-img-link" href="#"
           ><img src="./assets/images/blog-4.png" alt="設計師獨享鏡框優惠" />
         </a>
@@ -125,7 +126,7 @@
           <a class="blog-more-link" href="#">MORE</a>
         </div>
       </li>
-      <li class="blog-article-card-item">
+      <li class="blog-article-card-item" data-aos="fade-left">
         <a class="blog-article-card-img-link" href="#"
           ><img src="./assets/images/blog-5.png" alt="抵抗夏日大作戰" />
         </a>
@@ -207,6 +208,7 @@
       </div>
     </footer>
     <!--footer end-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/all.js"></script>

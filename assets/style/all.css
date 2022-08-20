@@ -453,6 +453,7 @@ body {
 
 .banner {
   background-image: url(../images/home-header.png);
+  background-attachment: fixed;
   height: calc(100vh - 80px); }
   @media (max-width: 992px) {
     .banner {
@@ -585,6 +586,7 @@ body {
 
 .design {
   background-image: url(../images/index-bg.png);
+  background-attachment: fixed;
   padding: 80px 0;
   text-align: center; }
   @media (max-width: 992px) {
