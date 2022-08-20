@@ -120,3 +120,14 @@ body {
   }
 }
 // pagination end
+
+// fix AOS animation z-index problem
+[data-aos] {
+  pointer-events: none;
+}
+.aos-animate {
+  pointer-events: auto;
+}
+.aos-init[data-aos][data-aos].aos-animate {
+  transform: unset;
+}
