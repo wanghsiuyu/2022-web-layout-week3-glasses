@@ -1,6 +1,7 @@
 // banner start
 .banner {
   background-image: url(../images/home-header.png);
+  background-attachment: fixed;
   height: calc(100vh - 80px); //設計稿為787px;
   @include pad() {
     background-image: url(../images/home-header-sm.png);
@@ -136,6 +137,7 @@
 // design start
 .design {
   background-image: url(../images/index-bg.png);
+  background-attachment: fixed;
   padding: 80px 0;
   text-align: center;
   @include pad() {
